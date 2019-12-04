@@ -1,5 +1,6 @@
 package com.qa.api.gorest.restclient;
 
+import java.io.File;
 import java.util.Map;
 
 import com.qa.api.gorest.util.TestUtil;
@@ -34,7 +35,7 @@ public class RestClient {
 	
 	
 	public static Response doGet(String contentType, String baseURL, String basePath, 
-			String token, Map<String, String> paramMaps, boolean Log) {
+			Map<String, String> token, Map<String, String> paramMaps, boolean Log) {
 		
 		if (setBaseURL(baseURL)) {
 			RequestSpecification request = createRequest(contentType, token, paramMaps, Log);
@@ -54,7 +55,7 @@ public class RestClient {
 	 * @return This method is returning response from the POST call
 	 */
 	public static Response doPost(String contentType, String baseURL, String basePath, 
-			String token, Map<String, String> paramMaps, boolean Log, Object obj) {
+			Map<String, String> token, Map<String, String> paramMaps, boolean Log, Object obj) {
 		
 		if (setBaseURL(baseURL)) {
 			RequestSpecification request = createRequest(contentType, token, paramMaps, Log);
@@ -64,11 +65,59 @@ public class RestClient {
 		return null;
 		}
 	
-	public static void addRequestPayload(RequestSpecification request, Object obj) {
-		String  JsonPayload = TestUtil.getSerializedJason(obj);
-		request.body(JsonPayload);
+	/**
+	 *  This method is used call PUT APIs
+	 * @param contentType
+	 * @param baseURL
+	 * @param basePath
+	 * @param token
+	 * @param paramMaps
+	 * @param Log
+	 * @param obj
+	 * @return This method is returning response from the PUT call
+	 */
+	public static Response doPut(String contentType, String baseURL, String basePath, 
+			Map<String, String> token, Map<String, String> paramMaps, boolean Log, Object obj) {
+		
+		if (setBaseURL(baseURL)) {
+			RequestSpecification request = createRequest(contentType, token, paramMaps, Log);
+			addRequestPayload(request, obj);
+			return getResponse("PUT", request, basePath);
+		}
+		return null;
+		}
+	/**
+	 * This method is used call DELETE APIs
+	 * @param contentType
+	 * @param baseURL
+	 * @param basePath
+	 * @param token
+	 * @param paramMaps
+	 * @param Log
+	 * @param obj
+	 * @return This method is returning response from the DELETEcall
+	 */
+	public static Response doDelete(String contentType, String baseURL, String basePath, 
+			Map<String, String> token, Map<String, String> paramMaps, boolean Log, Object obj) {
+		
+		if (setBaseURL(baseURL)) {
+			RequestSpecification request = createRequest(contentType, token, paramMaps, Log);
+			return getResponse("DELETE", request, basePath);
+		}
+		return null;
+		}
 	
-	}
+	
+	
+	
+	public static void addRequestPayload(RequestSpecification request, Object obj) {
+		
+		if (obj instanceof Map) {
+			request.formParams((Map<String, String>)obj);
+		} else {
+			String  JsonPayload = TestUtil.getSerializedJason(obj);
+			request.body(JsonPayload);
+		} }
 	
 	private static boolean setBaseURL(String baseURL) {
 		if (baseURL==null || baseURL.isEmpty()) {
@@ -85,7 +134,7 @@ public class RestClient {
 		}
 	}
 	
-	private static RequestSpecification createRequest(String contentType, String token,  
+	private static RequestSpecification createRequest(String contentType, Map<String, String> token,  
 			Map<String, String> paramMaps, boolean Log) {
 		
 		RequestSpecification request;
@@ -95,26 +144,31 @@ public class RestClient {
 			request = RestAssured.given();
 		}
 		
-		if (token !=null) {
-			request.header("Authorization", "Bearer "+token);
+		if (token.size()>0) {
+			request.headers(token);
 			
 			}
 		if (!(paramMaps==null)) {
 			request.queryParams(paramMaps);
 		}
-		if (contentType.equalsIgnoreCase("JSON")) {
-			request.contentType(ContentType.JSON);
-			
+		if (contentType != null) {
+			if (contentType.equalsIgnoreCase("JSON")) {
+				request.contentType(ContentType.JSON);
+
+			} else if (contentType.equalsIgnoreCase("XML")) {
+				request.contentType(ContentType.XML);
+
+			} else if (contentType.equalsIgnoreCase("TEXT")) {
+				request.contentType(ContentType.TEXT);
+			} else if (contentType.equalsIgnoreCase("multipart")) {
+				request.multiPart("image", new File("E:\\Selenium\\Workspace\\"
+						+ "RestAssuredFrameWork\\src\\main\\java\\"
+						+ "com\\qa\\api\\gorest\\testdata\\download1.jpg"));
+			} 
 		}
-		else if (contentType.equalsIgnoreCase("XML")) {
-			request.contentType(ContentType.XML);
-			
-		}
-		else if (contentType.equalsIgnoreCase("TEXT")) {
-			request.contentType(ContentType.TEXT);
-	}
+
 		return request;
-	
+
 }
 	
 	private static Response getResponse(String httpMethod, RequestSpecification request, String basePath) {
@@ -132,7 +186,7 @@ public class RestClient {
 		case "POST":
 			response = request.post(basePath);
 			break;
-		case "put":
+		case "PUT":
 			response = request.put(basePath);
 			break;
 		case "DELETE":

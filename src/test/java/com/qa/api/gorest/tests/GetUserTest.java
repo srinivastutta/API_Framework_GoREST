@@ -15,9 +15,15 @@ public class GetUserTest {
 	String basePath = "/public-api/users";
 	String token = "sz54-2RPwMeyNOsRUZHMkLUPBXPChHbk-sZW";
 	
+	public static Map<String, String> authTokenMap;
+	
 	@Test(priority = 1)
 	public void getAllUserListAPITest() {
-		Response response = RestClient.doGet("JSON", baseURL, basePath, token, null, true);
+		
+		authTokenMap = new HashMap<String, String>();
+		authTokenMap.put("Authorization", "Bearer "+token);
+		
+		Response response = RestClient.doGet("JSON", baseURL, basePath, authTokenMap, null, true);
 		
 		System.out.println(response.statusCode());
 		System.out.println(response.prettyPrint());
@@ -31,7 +37,7 @@ public class GetUserTest {
 		params.put("status", "active");
 		params.put("email", "jermey.hahn@example.net");
 		
-		Response response = RestClient.doGet("JSON", baseURL, basePath, token, params, true);
+		Response response = RestClient.doGet("JSON", baseURL, basePath, authTokenMap, params, true);
 		
 		System.out.println(response.statusCode());
 		System.out.println(response.prettyPrint());

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.api.gorest.tests.CreateUserTest">
+      <class name="com.qa.api.gorest.tests.GetPostCallWithComplexJason">
         <methods>
-          <include name="createUserAPITest"/>
+          <include name="CreateUser_WithComplexPojo"/>
         </methods>
-      </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
+      </class> <!-- com.qa.api.gorest.tests.GetPostCallWithComplexJason -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
