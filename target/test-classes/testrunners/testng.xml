@@ -14,11 +14,11 @@
 		thread-count="3">
 		<classes>
 			<class name="com.qa.api.gorest.tests.CreateUserTest" />
-			<class name="com.qa.api.gorest.tests.GetUserTest" />
+			<!-- <class name="com.qa.api.gorest.tests.GetUserTest" />
 			<class name="com.qa.api.gorest.tests.UpdateUserTest" />
 			<class name="com.qa.api.imgur.tests.GetImgurAPITest" />
 			<class name="com.qa.api.imgur.tests.PostImgurAPITest" />
-			
+			 -->
 		</classes>
 	</test>
 </suite>

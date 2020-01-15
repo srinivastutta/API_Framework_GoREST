@@ -24,7 +24,7 @@ public class CreateUserTest {
 	
 	String baseURL = "https://gorest.co.in";
 	String basePath = "/public-api/users";
-	String token = "sz54-2RPwMeyNOsRUZHMkLUPBXPChHbk-sZW";
+	String token = "BrLSg_8Ney2mmqS0aQzUavzGGBoDdiz5fAHU";
 	
 	public static Map<String, String> authTokenMap;
 	
