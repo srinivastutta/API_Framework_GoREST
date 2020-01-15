@@ -7,8 +7,16 @@ import org.testng.annotations.Test;
 
 import com.qa.api.gorest.pojo.User;
 import com.qa.api.gorest.restclient.RestClient;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 
+@Epic("GoREST API Update User feature implementation...")
+@Feature("Update User API feature...")
 public class UpdateUserTest {
 	
 	
@@ -19,7 +27,8 @@ public class UpdateUserTest {
 	
 	public static Map<String, String> authTokenMap;
 	
-		
+	@Description("Updating user")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void updateUserAPITest() {
 		

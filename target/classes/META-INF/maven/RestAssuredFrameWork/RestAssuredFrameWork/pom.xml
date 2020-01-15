@@ -13,9 +13,53 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<aspectj.version>1.8.10</aspectj.version>
+
 	</properties>
 
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<useSystemClassLoader>false</useSystemClassLoader>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/testrunners/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
+				</configuration>
+
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
+
+			</plugin>
+
+		</plugins>
+	</build>
+
 	<dependencies>
+
 
 		<dependency>
 			<groupId>io.rest-assured</groupId>
@@ -24,6 +68,8 @@
 			<scope>test</scope>
 		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -31,21 +77,19 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
 		<dependency>
 			<groupId>com.github.scribejava</groupId>
 			<artifactId>scribejava-apis</artifactId>
 			<version>2.5.3</version>
+			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>4.0.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -63,25 +107,25 @@
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>ooxml-schemas</artifactId>
@@ -92,6 +136,18 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.12.0</version>
 		</dependency>
 
 	</dependencies>

@@ -7,8 +7,15 @@ import org.testng.annotations.Test;
 
 import com.qa.api.gorest.restclient.RestClient;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 
+@Epic("GoREST API GET User feature implementation...")
+@Feature("Get User API feature...")
 public class GetUserTest {
 	
 	String baseURL = "https://gorest.co.in";
@@ -17,6 +24,8 @@ public class GetUserTest {
 	
 	public static Map<String, String> authTokenMap;
 	
+	@Description("Get user test")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 1)
 	public void getAllUserListAPITest() {
 		
@@ -29,6 +38,8 @@ public class GetUserTest {
 		System.out.println(response.prettyPrint());
 		
 	}
+	@Description("Get User by using Parameters")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 		public void getUser_withQueryParamsTest() {
 		

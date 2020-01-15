@@ -12,15 +12,24 @@ import com.qa.api.gorest.complexpojo.Links;
 import com.qa.api.gorest.complexpojo.Self;
 import com.qa.api.gorest.complexpojo.User;
 import com.qa.api.gorest.restclient.RestClient;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 
 
-
+@Epic("GoREST API Create User feature implementation...")
+@Feature("Creating User API feature...")
 public class GetPostCallWithComplexJason {
 
 
 public static String token = "BrLSg_8Ney2mmqS0aQzUavzGGBoDdiz5fAHU";
 
+@Description("Creating user with Pojo Object")
+@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void CreateUser_WithComplexPojo() {
 		Self sf= new Self("http://www.sf.com");

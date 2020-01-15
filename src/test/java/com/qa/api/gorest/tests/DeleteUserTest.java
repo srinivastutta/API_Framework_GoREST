@@ -9,9 +9,16 @@ import org.testng.annotations.Test;
 import com.qa.api.gorest.pojo.User;
 import com.qa.api.gorest.restclient.RestClient;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
+@Epic("GoREST API Delete User feature implementation...")
+@Feature("Deleting User API feature...")
 public class DeleteUserTest {
 	
 	
@@ -24,6 +31,9 @@ public class DeleteUserTest {
 	public static String userId;
 	public static String firstname;
 	//Creating User 
+
+	@Description("Creating user")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 1)
 	public void createUserAPITest() {
 		
@@ -47,6 +57,8 @@ public class DeleteUserTest {
 		System.out.println(firstname);
 		
 	}
+	@Description("Delete user")
+	@Severity(SeverityLevel.NORMAL)
 		//Delete Same User
 	@Test(priority = 2)
 	public void updateUserAPITest() {
@@ -65,6 +77,8 @@ public class DeleteUserTest {
 		
 	}
 	//Verify User is deleted or not through GET Call
+	@Description("Verifying that user is deleted or not")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 3)
 	public void VeriyUserAPITest() {
 		

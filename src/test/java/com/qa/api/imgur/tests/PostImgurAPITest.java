@@ -8,11 +8,21 @@ import org.testng.annotations.Test;
 import com.qa.api.gorest.restclient.RestClient;
 import com.qa.api.gorest.util.Token;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
+
+@Epic("Imgur API Upload Image feature implementation...")
+@Feature("Upload Image API feature...")
 
 public class PostImgurAPITest {
 //"multpart" is content type for image uploads
 	
+	@Description("Uploading Image Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void uploadImagePostAPITest() {
 		
@@ -29,7 +39,8 @@ public class PostImgurAPITest {
 		System.out.println(response.prettyPrint());
 		
 	}
-	
+	@Description("Update Image Info Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void UpdateImageInfoPostAPITest() {
 		

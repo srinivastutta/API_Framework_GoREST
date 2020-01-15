@@ -8,7 +8,15 @@ import org.testng.annotations.Test;
 import com.qa.api.gorest.restclient.RestClient;
 import com.qa.api.gorest.util.Token;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
+
+@Epic("Imgur API get Account Test feature implementation...")
+@Feature("Account Test API feature...")
 
 public class GetImgurAPITest {
 	
@@ -32,7 +40,8 @@ public class GetImgurAPITest {
 		
 	}
 	
-	
+	@Description("Account Block Status Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void accountBlockstatusTest() {
 	
@@ -45,6 +54,9 @@ public class GetImgurAPITest {
 		
 		
 	}
+
+	@Description("Account Base Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void AccountBaseTest() {
 	Response response = RestClient.doGet(null, "https://api.imgur.com", "/3/account/"+accountUsername, 
@@ -54,6 +66,9 @@ public class GetImgurAPITest {
 	System.out.println(response.prettyPrint());
 		
 	}
+
+	@Description("Account Image Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void AccountImageTest() {
 	Response response = RestClient.doGet(null, "https://api.imgur.com", "/3/account/me/images", 
@@ -63,6 +78,9 @@ public class GetImgurAPITest {
 	System.out.println(response.prettyPrint());
 		
 	}
+
+	@Description("Account Settings Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void AccountSettingsTest() {
 	Response response = RestClient.doGet(null, "https://api.imgur.com", "/3/account/me/settings", 
@@ -73,6 +91,9 @@ public class GetImgurAPITest {
 		
 	}
 	
+
+	@Description("Account Image Test")
+	@Severity(SeverityLevel.NORMAL)	
 	@Test
 	public void getAccountImageTest() {
 	Response response = RestClient.doGet(null, "https://api.imgur.com", "/3/account/me/images", 
