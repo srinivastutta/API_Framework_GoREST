@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5646" started-at="2020-01-15T13:12:30Z" finished-at="2020-01-15T13:12:36Z">
+  <suite name="Rest API Test Suite" duration-ms="6117" started-at="2020-01-16T16:25:28Z" finished-at="2020-01-16T16:25:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5646" started-at="2020-01-15T13:12:30Z" finished-at="2020-01-15T13:12:36Z">
+    <test name="Rest API regression Test" duration-ms="6117" started-at="2020-01-16T16:25:28Z" finished-at="2020-01-16T16:25:34Z">
       <class name="com.qa.api.gorest.tests.CreateUserTest">
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@43ee72e6]" name="createUserAPITest" duration-ms="3545" started-at="2020-01-15T13:12:31Z" data-provider="getUserData" finished-at="2020-01-15T13:12:34Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@5c33f1a9]" name="createUserAPITest" duration-ms="3828" started-at="2020-01-16T16:25:28Z" data-provider="getUserData" finished-at="2020-01-16T16:25:32Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[manvik@gmail.com]]>
+                <![CDATA[mannu123@gmail.com]]>
               </value>
             </param>
             <param index="5">
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@43ee72e6]" name="createUserAPITest" duration-ms="374" started-at="2020-01-15T13:12:35Z" data-provider="getUserData" finished-at="2020-01-15T13:12:35Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@5c33f1a9]" name="createUserAPITest" duration-ms="406" started-at="2020-01-16T16:25:32Z" data-provider="getUserData" finished-at="2020-01-16T16:25:33Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[shanthi@gmail.com]]>
+                <![CDATA[shanthi1@gmail.com]]>
               </value>
             </param>
             <param index="5">
@@ -109,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@43ee72e6]" name="createUserAPITest" duration-ms="365" started-at="2020-01-15T13:12:35Z" data-provider="getUserData" finished-at="2020-01-15T13:12:35Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@5c33f1a9]" name="createUserAPITest" duration-ms="375" started-at="2020-01-16T16:25:33Z" data-provider="getUserData" finished-at="2020-01-16T16:25:33Z">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[veni@gmail.com]]>
+                <![CDATA[veni1@gmail.com]]>
               </value>
             </param>
             <param index="5">
@@ -160,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@43ee72e6]" name="createUserAPITest" duration-ms="369" started-at="2020-01-15T13:12:35Z" data-provider="getUserData" finished-at="2020-01-15T13:12:36Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@5c33f1a9]" name="createUserAPITest" duration-ms="376" started-at="2020-01-16T16:25:33Z" data-provider="getUserData" finished-at="2020-01-16T16:25:34Z">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[sriswl@gmail.com]]>
+                <![CDATA[sriswl1@gmail.com]]>
               </value>
             </param>
             <param index="5">
@@ -212,6 +212,6 @@
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
       </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Rest API regression Test -->
+  </suite> <!-- Rest API Test Suite -->
 </testng-results>

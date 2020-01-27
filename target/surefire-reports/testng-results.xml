@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Rest API Test Suite" duration-ms="15612" started-at="2020-01-27T11:20:33Z" finished-at="2020-01-27T11:20:48Z">
+    <groups>
+    </groups>
+    <test name="Rest API regression Test" duration-ms="15612" started-at="2020-01-27T11:20:33Z" finished-at="2020-01-27T11:20:48Z">
+      <class name="com.qa.api.gorest.tests.CreateUserTest">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@63a5e46c]" name="createUserAPITest" duration-ms="8661" started-at="2020-01-27T11:20:35Z" data-provider="getUserData" finished-at="2020-01-27T11:20:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manvik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tutta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01-Jan-2002]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mannu123@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.2365478E7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://manvik.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test address, Hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAPITest -->
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@63a5e46c]" name="createUserAPITest" duration-ms="1537" started-at="2020-01-27T11:20:43Z" data-provider="getUserData" finished-at="2020-01-27T11:20:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shanthi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tutta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01-Jan-2002]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[shanthi1@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.2365478E7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://manvik.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test address, Hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAPITest -->
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@63a5e46c]" name="createUserAPITest" duration-ms="1456" started-at="2020-01-27T11:20:45Z" data-provider="getUserData" finished-at="2020-01-27T11:20:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Veni]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tutta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01-Jan-2002]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[veni1@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.2365478E7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://manvik.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test address, Hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAPITest -->
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@63a5e46c]" name="createUserAPITest" duration-ms="1489" started-at="2020-01-27T11:20:47Z" data-provider="getUserData" finished-at="2020-01-27T11:20:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sriswl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tutta]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01-Jan-2002]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sriswl1@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.2365478E7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://manvik.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test address, Hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[inactive]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAPITest -->
+      </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
+    </test> <!-- Rest API regression Test -->
+  </suite> <!-- Rest API Test Suite -->
+</testng-results>
