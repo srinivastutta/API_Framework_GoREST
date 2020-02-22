@@ -39,7 +39,7 @@ public static String token = "BrLSg_8Ney2mmqS0aQzUavzGGBoDdiz5fAHU";
 		Links ln = new Links(sf, ed, av);
 		
 		User user = new User("Mannu", "Tutta", "male", "01-01-1998",
-		"mannu4@gmail.com", "1234123423", "http://mannu.com", "test address", "active", ln);
+		"mannu41@gmail.com", "1234123423", "http://mannu.com", "test address", "active", ln);
 		
 		Map<String, String> tokenMap = new HashMap<String, String>();
 		tokenMap.put("Authorization", "Bearer "+token);
