@@ -59,7 +59,7 @@ public class RestClient{
 		
 		if (setBaseURL(baseURL)) {
 			RequestSpecification request = createRequest(contentType, token, paramMaps, Log);
-			addRequestPayload(request, obj);
+			addRequestPayload(request, obj); 
 			return getResponse("POST", request, basePath);
 		}
 		return null;
