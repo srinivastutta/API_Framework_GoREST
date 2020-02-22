@@ -18,7 +18,7 @@ import io.restassured.specification.RequestSpecification;
  *
  */
 
-public class RestClient {
+public class RestClient{
 
 	//HTTP Methods: GET POST PUT DELETE
 
@@ -161,8 +161,7 @@ public class RestClient {
 			} else if (contentType.equalsIgnoreCase("TEXT")) {
 				request.contentType(ContentType.TEXT);
 			} else if (contentType.equalsIgnoreCase("multipart")) {
-				request.multiPart("image", new File("E:\\Selenium\\Workspace\\"
-						+ "RestAssuredFrameWork\\src\\main\\java\\"
+				request.multiPart("image", new File("\\src\\main\\java\\"
 						+ "com\\qa\\api\\gorest\\testdata\\download1.jpg"));
 			} 
 		}
