@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22299" started-at="2020-02-22T20:43:28Z" finished-at="2020-02-22T20:43:50Z">
+  <suite name="Default suite" duration-ms="10204" started-at="2020-03-17T11:17:38Z" finished-at="2020-03-17T11:17:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22299" started-at="2020-02-22T20:43:28Z" finished-at="2020-02-22T20:43:50Z">
-      <class name="com.qa.api.gorest.tests.UpdateUserTest">
-        <test-method status="PASS" signature="updateUserAPITest()[pri:0, instance:com.qa.api.gorest.tests.UpdateUserTest@7a4ccb53]" name="updateUserAPITest" duration-ms="1054" started-at="2020-02-22T20:43:36Z" finished-at="2020-02-22T20:43:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserAPITest -->
-      </class> <!-- com.qa.api.gorest.tests.UpdateUserTest -->
+    <test name="Default test" duration-ms="10204" started-at="2020-03-17T11:17:38Z" finished-at="2020-03-17T11:17:49Z">
       <class name="com.qa.api.gorest.tests.CreateUserTest">
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@47542153]" name="createUserAPITest" duration-ms="4340" started-at="2020-02-22T20:43:29Z" data-provider="getUserData" finished-at="2020-02-22T20:43:33Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@7219ec67]" name="createUserAPITest" duration-ms="5094" started-at="2020-03-17T11:17:39Z" data-provider="getUserData" finished-at="2020-03-17T11:17:45Z">
           <params>
             <param index="0">
               <value>
@@ -64,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@47542153]" name="createUserAPITest" duration-ms="1089" started-at="2020-02-22T20:43:33Z" data-provider="getUserData" finished-at="2020-02-22T20:43:34Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@7219ec67]" name="createUserAPITest" duration-ms="1537" started-at="2020-03-17T11:17:45Z" data-provider="getUserData" finished-at="2020-03-17T11:17:46Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@47542153]" name="createUserAPITest" duration-ms="1025" started-at="2020-02-22T20:43:34Z" data-provider="getUserData" finished-at="2020-02-22T20:43:35Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@7219ec67]" name="createUserAPITest" duration-ms="1030" started-at="2020-03-17T11:17:46Z" data-provider="getUserData" finished-at="2020-03-17T11:17:47Z">
           <params>
             <param index="0">
               <value>
@@ -166,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@47542153]" name="createUserAPITest" duration-ms="1039" started-at="2020-02-22T20:43:35Z" data-provider="getUserData" finished-at="2020-02-22T20:43:36Z">
+        <test-method status="PASS" signature="createUserAPITest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@7219ec67]" name="createUserAPITest" duration-ms="1428" started-at="2020-03-17T11:17:47Z" data-provider="getUserData" finished-at="2020-03-17T11:17:49Z">
           <params>
             <param index="0">
               <value>
@@ -218,82 +212,6 @@
           </reporter-output>
         </test-method> <!-- createUserAPITest -->
       </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
-      <class name="com.qa.api.imgur.tests.PostImgurAPITest">
-        <test-method status="PASS" signature="UpdateImageInfoPostAPITest()[pri:0, instance:com.qa.api.imgur.tests.PostImgurAPITest@309e345f]" name="UpdateImageInfoPostAPITest" duration-ms="574" started-at="2020-02-22T20:43:37Z" finished-at="2020-02-22T20:43:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpdateImageInfoPostAPITest -->
-        <test-method status="PASS" signature="uploadImagePostAPITest()[pri:0, instance:com.qa.api.imgur.tests.PostImgurAPITest@309e345f]" name="uploadImagePostAPITest" duration-ms="1136" started-at="2020-02-22T20:43:38Z" finished-at="2020-02-22T20:43:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadImagePostAPITest -->
-      </class> <!-- com.qa.api.imgur.tests.PostImgurAPITest -->
-      <class name="com.qa.api.imgur.tests.GetImgurAPITest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="Setup" is-config="true" duration-ms="786" started-at="2020-02-22T20:43:39Z" finished-at="2020-02-22T20:43:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="AccountBaseTest()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="AccountBaseTest" duration-ms="337" started-at="2020-02-22T20:43:40Z" finished-at="2020-02-22T20:43:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountBaseTest -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="Setup" is-config="true" duration-ms="387" started-at="2020-02-22T20:43:40Z" finished-at="2020-02-22T20:43:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="AccountImageTest()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="AccountImageTest" duration-ms="340" started-at="2020-02-22T20:43:41Z" finished-at="2020-02-22T20:43:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountImageTest -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="Setup" is-config="true" duration-ms="551" started-at="2020-02-22T20:43:41Z" finished-at="2020-02-22T20:43:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="AccountSettingsTest()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="AccountSettingsTest" duration-ms="638" started-at="2020-02-22T20:43:42Z" finished-at="2020-02-22T20:43:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountSettingsTest -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="Setup" is-config="true" duration-ms="281" started-at="2020-02-22T20:43:42Z" finished-at="2020-02-22T20:43:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="accountBlockstatusTest()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="accountBlockstatusTest" duration-ms="381" started-at="2020-02-22T20:43:43Z" finished-at="2020-02-22T20:43:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountBlockstatusTest -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="Setup" is-config="true" duration-ms="688" started-at="2020-02-22T20:43:43Z" finished-at="2020-02-22T20:43:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="getAccountImageTest()[pri:0, instance:com.qa.api.imgur.tests.GetImgurAPITest@56a6d5a6]" name="getAccountImageTest" duration-ms="714" started-at="2020-02-22T20:43:44Z" finished-at="2020-02-22T20:43:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccountImageTest -->
-      </class> <!-- com.qa.api.imgur.tests.GetImgurAPITest -->
-      <class name="com.qa.api.gorest.tests.DeleteUserTest">
-        <test-method status="PASS" signature="createUserAPITest()[pri:1, instance:com.qa.api.gorest.tests.DeleteUserTest@18ce0030]" name="createUserAPITest" duration-ms="1436" started-at="2020-02-22T20:43:45Z" finished-at="2020-02-22T20:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserAPITest -->
-        <test-method status="PASS" signature="updateUserAPITest()[pri:2, instance:com.qa.api.gorest.tests.DeleteUserTest@18ce0030]" name="updateUserAPITest" duration-ms="1021" started-at="2020-02-22T20:43:48Z" finished-at="2020-02-22T20:43:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserAPITest -->
-        <test-method status="PASS" signature="VeriyUserAPITest()[pri:3, instance:com.qa.api.gorest.tests.DeleteUserTest@18ce0030]" name="VeriyUserAPITest" duration-ms="1118" started-at="2020-02-22T20:43:49Z" finished-at="2020-02-22T20:43:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VeriyUserAPITest -->
-      </class> <!-- com.qa.api.gorest.tests.DeleteUserTest -->
-      <class name="com.qa.api.gorest.tests.GetUserTest">
-        <test-method status="PASS" signature="getAllUserListAPITest()[pri:1, instance:com.qa.api.gorest.tests.GetUserTest@33afa13b]" name="getAllUserListAPITest" duration-ms="1019" started-at="2020-02-22T20:43:44Z" finished-at="2020-02-22T20:43:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllUserListAPITest -->
-        <test-method status="PASS" signature="getUser_withQueryParamsTest()[pri:2, instance:com.qa.api.gorest.tests.GetUserTest@33afa13b]" name="getUser_withQueryParamsTest" duration-ms="1047" started-at="2020-02-22T20:43:47Z" finished-at="2020-02-22T20:43:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser_withQueryParamsTest -->
-      </class> <!-- com.qa.api.gorest.tests.GetUserTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
